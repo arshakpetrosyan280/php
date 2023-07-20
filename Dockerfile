@@ -1,4 +1,4 @@
 FROM php:8.2-cli
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
-CMD [ "php", "./index.php" ]
+CMD [ "/bin/sh", "-l", "-c", "php82-php-fpm, "./index.php" ]
